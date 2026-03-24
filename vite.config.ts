@@ -6,4 +6,11 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  base: "./",
+  build: {
+    minify: false, // <--- Add this!
+    terserOptions: {
+      mangle: false, // <--- This prevents the "S" and "_" renaming
+    },
+  },
 });
