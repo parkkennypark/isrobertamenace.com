@@ -1,8 +1,6 @@
-import { Route, Routes, Navigate, useLocation } from "react-router-dom";
-import { useEffect } from "react";
-
 import { HistoryItem } from "./HistoryItem";
 
+// @ts-ignore
 import useFetchGist from "./useFetchGist";
 
 const timestamp = new Date().getTime();
