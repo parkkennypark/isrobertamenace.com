@@ -31,12 +31,14 @@ function App() {
   if (!data) return null;
 
   return (
-    <div className="mx-auto my-auto flex h-screen w-[28rem] flex-col items-center pt-28">
+    <div className="mx-auto my-auto flex h-full w-full max-w-[28rem] flex-col items-center px-4 pt-28">
       {/* Title */}
-      <p className="animate-expand mb-2 text-3xl font-medium">
+      <p className="animate-expand mb-2 text-lg font-medium md:text-3xl">
         Is Robert Harris a Menace?
       </p>
-      <p className="animate-hover mb-4 text-6xl font-extrabold">{data.title}</p>
+      <p className="animate-hover mb-4 text-4xl font-extrabold md:text-6xl">
+        {data.title}
+      </p>
 
       {/* Slider */}
       <div className="relative h-24 w-full">
@@ -70,7 +72,7 @@ function App() {
       </div>
 
       <a
-        className="absolute bottom-0 left-0 p-4 text-xs text-gray-400 opacity-50 transition-opacity hover:opacity-100"
+        className="absolute bottom-0 left-0 p-4 text-xs text-gray-300"
         href="https://www.youtube.com/watch?v=-SjPVVeNdKY"
       >
         This site is funded in part by the Save America Super PAC. Click here to
