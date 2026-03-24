@@ -591,12 +591,12 @@ video {
   width: 1.5rem;
 }
 
-.w-\[28rem\]{
-  width: 28rem;
-}
-
 .w-full{
   width: 100%;
+}
+
+.max-w-\[28rem\]{
+  max-width: 28rem;
 }
 
 .flex-col{
@@ -640,17 +640,22 @@ video {
   padding: 1rem;
 }
 
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-28{
   padding-top: 7rem;
 }
 
-.text-3xl{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
+.text-5xl{
+  font-size: 3rem;
   line-height: 1;
 }
 
@@ -751,4 +756,21 @@ html {
 
 .hover\:opacity-100:hover{
   opacity: 1;
+}
+
+@media (min-width: 640px){
+
+  .sm\:w-\[28rem\]{
+    width: 28rem;
+  }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .sm\:text-6xl{
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
