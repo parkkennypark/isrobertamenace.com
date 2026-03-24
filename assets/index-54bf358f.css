@@ -727,18 +727,8 @@ video {
   color: rgb(202 138 4 / var(--tw-text-opacity, 1));
 }
 
-.opacity-50{
-  opacity: 0.5;
-}
-
 .transition-all{
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.transition-opacity{
-  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -754,22 +744,14 @@ html {
   line-height: 1.7rem;
 }
 
-.hover\:opacity-100:hover{
-  opacity: 1;
-}
+@media (min-width: 768px){
 
-@media (min-width: 640px){
-
-  .sm\:w-\[28rem\]{
-    width: 28rem;
-  }
-
-  .sm\:text-3xl{
+  .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .sm\:text-6xl{
+  .md\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
   }

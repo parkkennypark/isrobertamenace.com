@@ -7631,9 +7631,9 @@ function App() {
     ] });
   if (!data)
     return null;
-  return /* @__PURE__ */ jsxs("div", { className: "mx-auto my-auto flex h-screen w-full max-w-[28rem] flex-col items-center px-4 pt-28 sm:w-[28rem]", children: [
-    /* @__PURE__ */ jsx("p", { className: "animate-expand mb-2 text-2xl font-medium sm:text-3xl", children: "Is Robert Harris a Menace?" }),
-    /* @__PURE__ */ jsx("p", { className: "animate-hover mb-4 text-5xl font-extrabold sm:text-6xl", children: data.title }),
+  return /* @__PURE__ */ jsxs("div", { className: "mx-auto my-auto flex h-screen w-full max-w-[28rem] flex-col items-center px-4 pt-28", children: [
+    /* @__PURE__ */ jsx("p", { className: "animate-expand mb-2 text-2xl font-medium md:text-3xl", children: "Is Robert Harris a Menace?" }),
+    /* @__PURE__ */ jsx("p", { className: "animate-hover mb-4 text-5xl font-extrabold md:text-6xl", children: data.title }),
     /* @__PURE__ */ jsxs("div", { className: "relative h-24 w-full", children: [
       /* @__PURE__ */ jsx("img", { className: "absolute bottom-6", src: sliderImg, alt: "slider" }),
       /* @__PURE__ */ jsx(
@@ -7668,7 +7668,7 @@ function App() {
     /* @__PURE__ */ jsx(
       "a",
       {
-        className: "absolute bottom-0 left-0 p-4 text-xs text-gray-400 opacity-50 transition-opacity hover:opacity-100",
+        className: "absolute bottom-0 left-0 p-4 text-xs text-gray-400",
         href: "https://www.youtube.com/watch?v=-SjPVVeNdKY",
         children: "This site is funded in part by the Save America Super PAC. Click here to learn more."
       }
