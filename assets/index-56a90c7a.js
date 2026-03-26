@@ -7631,49 +7631,51 @@ function App() {
     ] });
   if (!data)
     return null;
-  return /* @__PURE__ */ jsxs("div", { className: "mx-auto my-auto flex h-max w-full max-w-[28rem] flex-col items-center px-4 pt-28", children: [
-    /* @__PURE__ */ jsx("p", { className: "animate-expand mb-2 text-lg font-medium md:text-3xl", children: "Is Robert Harris a Menace?" }),
-    /* @__PURE__ */ jsx("p", { className: "animate-hover mb-4 text-4xl font-extrabold md:text-6xl", children: data.title }),
-    /* @__PURE__ */ jsxs("div", { className: "relative h-24 w-full", children: [
-      /* @__PURE__ */ jsx("img", { className: "absolute bottom-6", src: sliderImg, alt: "slider" }),
-      /* @__PURE__ */ jsx(
-        "div",
-        {
-          className: "absolute top-0 w-16 transition-all duration-700",
-          style: { left: `${data.percent || 0}%` },
-          children: /* @__PURE__ */ jsxs("div", { className: "absolute -left-8 flex w-full flex-col items-center", children: [
-            /* @__PURE__ */ jsxs("p", { className: "font-bold", children: [
-              data.percent,
-              "%"
-            ] }),
-            /* @__PURE__ */ jsx("img", { className: "h-auto w-6", src: pointerImg, alt: "pointer" })
-          ] })
-        }
-      ),
-      /* @__PURE__ */ jsx("p", { className: "absolute bottom-0 text-sm", children: "cutie" }),
-      /* @__PURE__ */ jsx("p", { className: "absolute bottom-0 right-0 text-sm", children: "menace" })
+  return /* @__PURE__ */ jsxs("div", { className: "flex flex-col h-screen w-full p-4", children: [
+    /* @__PURE__ */ jsxs("div", { className: "max-w-[28rem] w-full items-center flex mx-auto flex-col pt-28 mb-auto", children: [
+      /* @__PURE__ */ jsx("p", { className: "animate-expand mb-2 text-lg font-medium md:text-3xl", children: "Is Robert Harris a Menace?" }),
+      /* @__PURE__ */ jsx("p", { className: "animate-hover mb-4 text-4xl font-extrabold md:text-6xl", children: data.title }),
+      /* @__PURE__ */ jsxs("div", { className: "relative h-24 w-full", children: [
+        /* @__PURE__ */ jsx("img", { className: "absolute bottom-6", src: sliderImg, alt: "slider" }),
+        /* @__PURE__ */ jsx(
+          "div",
+          {
+            className: "absolute top-0 w-16 transition-all duration-700",
+            style: { left: `${data.percent || 0}%` },
+            children: /* @__PURE__ */ jsxs("div", { className: "absolute -left-8 flex w-full flex-col items-center", children: [
+              /* @__PURE__ */ jsxs("p", { className: "font-bold", children: [
+                data.percent,
+                "%"
+              ] }),
+              /* @__PURE__ */ jsx("img", { className: "h-auto w-6", src: pointerImg, alt: "pointer" })
+            ] })
+          }
+        ),
+        /* @__PURE__ */ jsx("p", { className: "absolute bottom-0 text-sm", children: "cutie" }),
+        /* @__PURE__ */ jsx("p", { className: "absolute bottom-0 right-0 text-sm", children: "menace" })
+      ] }),
+      /* @__PURE__ */ jsx("p", { className: "mt-12 md:text-sm text-[0.7rem] text-gray-500", children: "Disagree? Email support@isrobertamenace.com" }),
+      /* @__PURE__ */ jsxs("div", { className: "mb-12 mt-2 md:mt-4 w-full space-y-4 rounded-lg bg-gray-200 p-4", children: [
+        /* @__PURE__ */ jsx("p", { className: "text-xs font-bold uppercase tracking-wider text-gray-500", children: "history" }),
+        ((data == null ? void 0 : data.history) || []).map((item, index2) => /* @__PURE__ */ jsx(
+          HistoryItem,
+          {
+            date: item.date,
+            description: item.description,
+            change: item.change
+          },
+          index2
+        ))
+      ] })
     ] }),
-    /* @__PURE__ */ jsx("p", { className: "mt-12 md:text-sm text-[0.7rem] text-gray-500", children: "Disagree? Email support@isrobertamenace.com" }),
-    /* @__PURE__ */ jsxs("div", { className: "mb-12 mt-2 md:mt-4 w-full space-y-4 rounded-lg bg-gray-200 p-4", children: [
-      /* @__PURE__ */ jsx("p", { className: "text-xs font-bold uppercase tracking-wider text-gray-500", children: "history" }),
-      ((data == null ? void 0 : data.history) || []).map((item, index2) => /* @__PURE__ */ jsx(
-        HistoryItem,
-        {
-          date: item.date,
-          description: item.description,
-          change: item.change
-        },
-        index2
-      ))
-    ] }),
-    /* @__PURE__ */ jsx(
+    /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx(
       "a",
       {
-        className: "absolute bottom-0 left-0 p-4 text-xs text-gray-300",
+        className: "text-xs text-gray-300 pb-4",
         href: "https://www.youtube.com/watch?v=-SjPVVeNdKY",
         children: "This site is funded in part by the Save America Super PAC. Click here to learn more."
       }
-    )
+    ) })
   ] });
 }
 const index = "";
